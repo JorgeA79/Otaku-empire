@@ -9,11 +9,13 @@ client.on('ready',() => {
 });
 
 
-    for(var i = 0; i < message.embeds.length; i++) {
-        if(message.embeds[i].title.includes("Bungou Stray") || message.embeds[i].title.includes("Bungou Stray")) {
-      message.channel.send("im gay");
-    }
-}
+client.on('message', message => {
+	if (message.author.bot){
+	if (message.content.startsWith('Bungou Stray')) {
+
+		 message.channel.send(`@everyone WHAPAM );
+	}}
+});
 
 //Important
 client.login(process.env.BOT_TOKEN);
