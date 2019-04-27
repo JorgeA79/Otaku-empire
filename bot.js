@@ -17,7 +17,7 @@ else {
     for(var i = 0; i < message.embeds.length; i++) {
         if(message.embeds[i].title.includes("Bungo Stray")) {
             message.channel.send("Detected");
-            break;
+            
     }
 }}});
 
