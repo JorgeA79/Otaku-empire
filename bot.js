@@ -9,7 +9,12 @@ client.on('ready',() => {
 });
 
 
-
+client.on('message', message => {
+	if (message.author.bot){
+	if(message.author.id === "125367104336691200") {
+		message.channel.send(`@everyone`);
+	}}
+});
 
 //Important
 client.login(process.env.BOT_TOKEN);
