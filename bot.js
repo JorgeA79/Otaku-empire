@@ -23,7 +23,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 	
- 	if (message.channel.id === 571550303569182732)){
+ 	if (message.channel.id === "571550303569182732")){
 	if (message.author.bot){
 	if(message.author.id === "125367104336691200") {
 		
