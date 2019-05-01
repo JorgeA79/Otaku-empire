@@ -8,6 +8,13 @@ client.on('ready',() => {
 	   client.user.setPresence({game: {name: "", type: 0}});
 });
 
+client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith(prefix + 'ping')) {
+	
+		 message.channel.send(`:ping_pong: Pong! \nTime taken: \`${Date.now() - message.createdTimestamp} ms\``);
+	}
+});
 
 client.on('message', message => {
 	
