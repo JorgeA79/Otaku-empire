@@ -15,7 +15,9 @@ client.on('message', message => {
 	if (message.author.bot){
 	if(message.author.id === "125367104336691200") {
 		
-		message.channel.send(`@Anime`);
+	let animerole = message.server.roles.get('name', 'anime');
+		
+		message.channel.send(`${animerole}`);
 	}}}
 });
 
