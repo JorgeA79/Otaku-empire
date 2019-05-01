@@ -17,8 +17,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'setchannel')) {
 		
-	 const command = args.join(" ");
-		 message.channel.send('' + command);
+		 message.channel.send('');
 	}
 });
 
