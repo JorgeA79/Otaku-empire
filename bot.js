@@ -17,7 +17,7 @@ client.on('message', message => {
 		
 	
 		
-		message.channel.send(`<@&572950228177649664>`);
+		message.channel.send(`<@&572950228177649664>, New episode!`);
 	}}}
 });
 
