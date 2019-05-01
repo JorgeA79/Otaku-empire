@@ -8,6 +8,8 @@ client.on('ready',() => {
 	   client.user.setPresence({game: {name: "", type: 0}});
 });
 
+var prefix = "y!"
+
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'ping')) {
