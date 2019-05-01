@@ -17,7 +17,7 @@ client.on('message', message => {
 		
 	
 		
-		message.channel.send(`$<@&572947865299714089>`);
+		message.channel.send(`<@&572947865299714089>`);
 	}}}
 });
 
