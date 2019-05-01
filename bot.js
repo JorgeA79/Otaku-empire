@@ -13,13 +13,6 @@ client.on('ready',() => {
 });
 
 
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'setchannel')) {
-		
-		 message.channel.send('');
-	}
-});
 
 client.on('message', message => {
 	
