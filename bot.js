@@ -2,16 +2,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-var prefix = "y!"
-var BOTID = "0"
-var CHANNELID = "0"
-
 
 client.on('ready',() => {
 	//Edit after game so u can add wut game bot is playing between "" xd
 	   client.user.setPresence({game: {name: "", type: 0}});
 });
-
 
 
 client.on('message', message => {
